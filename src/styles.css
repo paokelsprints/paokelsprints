@@ -1,0 +1,91 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #001e62;
+  background: #f5f8ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.hero {
+  background: linear-gradient(135deg, #001e62 0%, #c40c1a 60%, #fdb913 100%);
+  color: white;
+  text-align: center;
+  padding: 4rem 1.2rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.8rem);
+}
+
+.hero p {
+  max-width: 760px;
+  margin: 1rem auto 1.8rem;
+  font-size: 1.1rem;
+}
+
+.cta {
+  display: inline-block;
+  background: #00af54;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.2rem;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.carousel-section,
+.cards-grid {
+  width: min(1100px, 92%);
+  margin: 2.8rem auto;
+}
+
+.carousel-section h2 {
+  text-align: center;
+  color: #001e62;
+}
+
+.service-card {
+  background: white;
+  border: 2px solid #ffd04f;
+  border-radius: 14px;
+  padding: 1.2rem;
+  min-height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  color: #0b1f63;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.cards-grid article {
+  background: white;
+  border-left: 4px solid #c40c1a;
+  border-radius: 10px;
+  padding: 1.1rem;
+  box-shadow: 0 10px 25px rgba(0, 30, 98, 0.08);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #1a2d70;
+  background: #e9efff;
+}
